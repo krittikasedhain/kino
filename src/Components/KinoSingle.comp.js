@@ -22,6 +22,7 @@ const KinoSingleComp = ({
           {`${gameDate.d}/${gameDate.m}/${gameDate.year}`}
         </Text>
       </ContentContainer>
+      <hr></hr>
       <NumberContainer>
         {drawNumbers.map((number, index) => (
           <Number>{number}</Number>

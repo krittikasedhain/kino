@@ -3,7 +3,7 @@ import axios from "axios";
 const fetch_data = () => async (dispatch, getState) => {
   try {
     const { data } = axios.get(
-      "http://puertorico.secondchancebonuszone.com/kino/past_drawings.php"
+      "https://puertorico.secondchancebonuszone.com/kino/past_drawings.php"
     );
 
     console.log(data);

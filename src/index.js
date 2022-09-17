@@ -1,18 +1,20 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import store from "./Store/store";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import './index.css';
+import { Provider } from "react-redux";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ThemeProvider } from "react-bootstrap";
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ThemeProvider breakpoints={["xl", "lg", "md", "sm", "xs"]}>
+        <App />
+      </ThemeProvider>
     </Provider>
   </React.StrictMode>
 );
