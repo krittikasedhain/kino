@@ -22,7 +22,7 @@ const KinoSingleComp = ({
           {`${gameDate.d}/${gameDate.m}/${gameDate.year}`}
         </Text>
       </ContentContainer>
-      <hr></hr>
+      <Line/>
       <NumberContainer>
         {drawNumbers.map((number, index) => (
           <Number>{number}</Number>
@@ -31,6 +31,13 @@ const KinoSingleComp = ({
     </Container>
   );
 };
+
+const Line = styled.hr`
+  width: 100%;
+  border-width: 3px;
+  border-color: white;
+  opacity: 1;
+`;
 
 const Container = styled.div`
   background-color: #02a8f4;

@@ -43,6 +43,78 @@ function App() {
         {kino.map((kinoGame, index) => (
           <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
         ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
+        {kino.map((kinoGame, index) => (
+          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
+        ))}
       </KinoContainer>
       <ModalComponent
         open={showModal}
@@ -55,7 +127,7 @@ function App() {
 
 const Container = styled.div`
   background-color: black;
-  height: 100vh;
+  height: 100%;
   color: #fff;
 `;
 const KinoContainer = styled.div`
