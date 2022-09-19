@@ -21,14 +21,15 @@ function App() {
     setShowKino(null);
   };
 
-  console.log(kino);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    // The api is not working
-    const data = fetch_data();
-    dispatch(fetch_data(data));
-  }, []);
+  useEffect(() => FetchKino, []);
+
+
+  const FetchKino = async () =>{
+    const data = await  dispatch(fetch_data());
+    console.log(data)
+  }
 
   return (
     <Container>
@@ -37,84 +38,7 @@ function App() {
         {kino.map((kinoGame, index) => (
           <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
         ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
-        {kino.map((kinoGame, index) => (
-          <KinoSingleComp key={index} {...kinoGame} click={handleShowKino} />
-        ))}
+        
       </KinoContainer>
       <ModalComponent
         open={showModal}
